@@ -26,7 +26,7 @@ const VedioContainer = () => {
     }
   };
   return isLoaded ? (
-    <div className="w-11/12 flex flex-row flex-wrap sm:px-28 ">
+    <div className="w-fit flex  flex-wrap  ">
       {video.map((obj: YouTubeVideo, index: number) => (
         <Link key={index} to={`/watch?v=${obj.id}`}>
           <VideoCard info={obj} />

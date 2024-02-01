@@ -3,7 +3,7 @@ import Sidebar from "./Sidebar";
 import { Outlet } from "react-router-dom";
 const Body = () => {
   return (
-    <div className="grid grid-cols-12">
+    <div className="">
       <Sidebar />
       <Outlet />
     </div>

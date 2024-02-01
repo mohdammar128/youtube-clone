@@ -4,7 +4,7 @@ const Heading = () => {
   const dispatch = useAppDispatch();
 
   return (
-    <div className="inline-flex w-screen justify-between sm:max-w-11/12">
+    <div className="inline-flex w-screen h-16 justify-between sm:max-w-11/12 p-4items-center fixed shadow-lg z-10 bg-slate-500">
       <div className="flex ml-5">
         {/* hamburger button */}
         <img
@@ -24,10 +24,10 @@ const Heading = () => {
       </div>
       {/* search bar */}
 
-      <div className=" base-3/4 px-5 py-2  ">
+      <div className=" base-3/4 px-5 py-2 flex ">
         <input
           type="text"
-          className=" border border-gray-400 p-2 rounded-l-full w-[]"
+          className=" border border-gray-400 p-2 rounded-l-full sm:w-[600px]"
         />
         <button className=" border border-b-gray-500 p-2 rounded-r-full">
           search

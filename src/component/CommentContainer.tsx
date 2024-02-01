@@ -49,8 +49,8 @@ const SingleComment = ({ snnipet2 }: MessageProps) => {
   console.log(textOriginal, authorDisplayName, authorProfileImageUrl);
   return (
     <div>
-      <ul className="flex">
-        <img src={authorProfileImageUrl} alt="" />
+      <ul className="flex gap-3">
+        <img src={authorProfileImageUrl} alt="" className="rounded-full scale-75"/>
         <div className="">
           <h2 className="font-semibold">{authorDisplayName}</h2>
           <li>{textOriginal}</li>

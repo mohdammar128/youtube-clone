@@ -5,7 +5,7 @@ import VedioContainer from "./VedioContainer";
 const MainContainer = () => {
   const { isMenu } = useAppSelector((state) => state.app);
   return (
-    <div className={` bg-orange-200 flex flex-col items-center ${isMenu?"col-span-10":"col-span-12"} gap-5 `}>
+    <div className={`${isMenu?"ml-48":"ml-5"} mt-24 mr-5` }>
       <ButtonList />
       <VedioContainer />
     </div>
